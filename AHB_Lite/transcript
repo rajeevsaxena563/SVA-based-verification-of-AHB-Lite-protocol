@@ -1,0 +1,48 @@
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim top "+testname=test_burst1_busy0_beats4" 
+# Start time: 17:53:55 on Jan 30,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.definesPkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.AHBSlaveTop(fast)
+# Loading work.AHBSlaveMemory(fast)
+# Loading work.test(fast)
+# Loading work.AHBInterface(fast)
+add wave sim:/top/AHBBUS/*
+add wave sim:/top/SlaveTop/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/RAJEEV/Desktop/AMBA_AHB-Lite/code/AHB_Lite/wave.do
+# ------------------------------------------------------------------------------------------------------
+# ----------------------------------------ASSERTION SCOREBOARD------------------------------------------
+# ******************************************************************************************************
+# TYPE OF CHECK 				TOTAL COUNT		PASS COUNT		 FAIL COUNT 
+# ------------------------------------------------------------------------------------------------------
+#  error_check            		          0		          0		          0      
+#  read_only_error_check  		          0		          0		          0      
+#  basic_write_error      		          0		          0		          0      
+#  basic_read_error_check 		          0		          0		          0      
+#  basic_burst_write_check		          0		          0		          0      
+#  basic_burst_read_check 		          0		          0		          0      
+#  HREADY_check           		          0		          0		          0      
+#  bursts_count_check4    		          0		          0		          0      
+#  bursts_count_check8    		          0		          0		          0      
+#  bursts_count_check16   		          0		          0		          0      
+#  address_change4        		          0		          0		          0      
+#  address_change8        		          0		          0		          0      
+#  address_change16       		          0		          0		          0      
+# End time: 17:57:38 on Jan 30,2020, Elapsed time: 0:03:43
+# Errors: 0, Warnings: 0

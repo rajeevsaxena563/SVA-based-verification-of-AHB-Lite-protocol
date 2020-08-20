@@ -1,0 +1,53 @@
+# vsim top -l log_test_wait_state_byslave.txt -wlf wave_test_wait_state_byslave.wlf "+testname=test_wait_state_byslave" 
+# Start time: 18:44:35 on Jan 30,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.definesPkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.AHBSlaveTop(fast)
+# Loading work.AHBSlaveMemory(fast)
+# Loading work.test(fast)
+# Loading work.AHBInterface(fast)
+# testcase selected : test_wait_state_byslave
+# testfrom env: 50stest_wait_state_byslave
+# env class running
+# testname from gen: test_wait_state_byslave
+# testname from drv: test_wait_state_byslave
+# ENV:run task executing
+# get run task executing
+# gen::pkt='{Address_rand:4, Data_rand:1}
+# get run wait executing
+# driver run task executing
+# wait data = 1
+# 
+# write method call
+# Write method printing::addr = 00000004 and HWdata=00000001
+# wait data = 0
+# 
+# DRV::pkt='{Address_rand:4, Data_rand:1}
+# DATA @ address 32'h00000004 with wait states installed by Slave = 00000001
+# 
+# ** Note: $stop    : ahb_driver.sv(373)
+#    Time: 180 ns  Iteration: 1  Region: /list_svh_unit::environment::run
+# Break in Task list_svh_unit/driver::run at ahb_driver.sv line 373
+# ------------------------------------------------------------------------------------------------------
+# ----------------------------------------ASSERTION SCOREBOARD------------------------------------------
+# ******************************************************************************************************
+# TYPE OF CHECK 				TOTAL COUNT		PASS COUNT		 FAIL COUNT 
+# ------------------------------------------------------------------------------------------------------
+#  error_check            		          0		          0		          0      
+#  read_only_error_check  		          0		          0		          0      
+#  basic_write_error      		          1		          1		          0      
+#  basic_read_error_check 		          1		          1		          0      
+#  basic_burst_write_check		          0		          0		          0      
+#  basic_burst_read_check 		          0		          0		          0      
+#  HREADY_check           		          0		          0		          0      
+#  bursts_count_check4    		          0		          0		          0      
+#  bursts_count_check8    		          0		          0		          0      
+#  bursts_count_check16   		          0		          0		          0      
+#  address_change4        		          0		          0		          0      
+#  address_change8        		          0		          0		          0      
+#  address_change16       		          0		          0		          0      
+# End time: 18:45:30 on Jan 30,2020, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 0

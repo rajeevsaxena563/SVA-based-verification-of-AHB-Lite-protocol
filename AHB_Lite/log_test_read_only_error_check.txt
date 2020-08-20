@@ -1,0 +1,51 @@
+# vsim top -l log_test_read_only_error_check.txt -wlf wave_test_read_only_error_check.wlf "+testname=test_read_only_error_check" 
+# Start time: 18:02:08 on Jan 30,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.definesPkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.AHBSlaveTop(fast)
+# Loading work.AHBSlaveMemory(fast)
+# Loading work.test(fast)
+# Loading work.AHBInterface(fast)
+# testcase selected : test_read_only_error_check
+# testfrom env: 50stest_read_only_error_check
+# env class running
+# testname from gen: test_read_only_error_check
+# testname from drv: test_read_only_error_check
+# ENV:run task executing
+# get run task executing
+# gen::pkt='{Address_rand:2, Data_rand:4294967295}
+# get run task2 executing
+# driver run task executing
+# write method call
+# ERROR - WRITING TO READ ONLY MEMORY - NOT ALLOWED
+# 
+# Write method printing::addr = 00000002 and HWdata=ffffffff
+#  ERROR RESPONSE FROM SLAVE TO MASTER 
+#  
+# DRV::pkt='{Address_rand:2, Data_rand:4294967295}
+# ** Note: $stop    : ahb_driver.sv(373)
+#    Time: 160 ns  Iteration: 2  Region: /list_svh_unit::environment::run
+# Break in Task list_svh_unit/driver::run at ahb_driver.sv line 373
+# ------------------------------------------------------------------------------------------------------
+# ----------------------------------------ASSERTION SCOREBOARD------------------------------------------
+# ******************************************************************************************************
+# TYPE OF CHECK 				TOTAL COUNT		PASS COUNT		 FAIL COUNT 
+# ------------------------------------------------------------------------------------------------------
+#  error_check            		          0		          0		          0      
+#  read_only_error_check  		          4		          4		          0      
+#  basic_write_error      		          1		          1		          0      
+#  basic_read_error_check 		          1		          1		          0      
+#  basic_burst_write_check		          0		          0		          0      
+#  basic_burst_read_check 		          0		          0		          0      
+#  HREADY_check           		          0		          0		          0      
+#  bursts_count_check4    		          0		          0		          0      
+#  bursts_count_check8    		          0		          0		          0      
+#  bursts_count_check16   		          0		          0		          0      
+#  address_change4        		          0		          0		          0      
+#  address_change8        		          0		          0		          0      
+#  address_change16       		          0		          0		          0      
+# End time: 18:02:45 on Jan 30,2020, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 0
